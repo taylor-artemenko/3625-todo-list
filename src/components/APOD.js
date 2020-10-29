@@ -57,7 +57,7 @@ export default class PersonList extends React.Component {
         }
         var today = new Date();
         var dd = today.getDate();
-        var mm = today.getMonth()+1; //January is 0!
+        var mm = today.getMonth()+1;
         var yyyy = today.getFullYear();
         if(dd<10){
             dd='0'+dd
@@ -77,7 +77,7 @@ export default class PersonList extends React.Component {
                 <br />
                 <form onSubmit={this.onSubmit}>
                     <label htmlFor="input1" >Enter a date: </label>
-                    <input style={inputStyle} id="input1" type="date" max={today} name="date" value={date} onChange={this.onChange} />
+                    <input style={inputStyle} id="input1" type="date" min="1995-06-20" max={today} name="date" value={date} onChange={this.onChange} />
                     <button style={buttonStyle} type="submit">Get The Picture!</button>
                 </form>
             </div>
