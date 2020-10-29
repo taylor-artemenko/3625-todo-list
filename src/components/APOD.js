@@ -42,8 +42,8 @@ export default class PersonList extends React.Component {
             justifyContent: 'center'
         }
         const imgStyle = {
-            maxWidth: '400px',
-            maxHeight: '400px',
+            maxWidth: '70%',
+            maxHeight: '70%',
         }
         const buttonStyle = {
             backgroundColor: 'lightgrey',
